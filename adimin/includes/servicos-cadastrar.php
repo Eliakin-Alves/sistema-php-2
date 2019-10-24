@@ -4,7 +4,7 @@
     include 'adimin/model/cliente.dao.php';
     if($_POST) {
         try {
-            $obj = new Cliente();
+            $obj = new Servicos();
             $obj->setNome($_POST['nome']);
             $obj->setCpf($_POST['cpf']);
             $obj->setEndereco($_POST['endereco']);
