@@ -26,7 +26,7 @@
             <a class="nav-link" href="clientes-lista.php">Lista de Clientes</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="cliente-novo.php">Novo Cliente</a>
+            <a class="nav-link" href="cadastro-servicos.php">Novo Cliente</a>
         </li>
     </ul>
   </div>
