@@ -1,12 +1,11 @@
 <?php
-    class DAOCliente {
-        public function cadastrar(Cliente $cliente) {
-            $sql = "INSERT INTO cliente
-                VALUES (default, :nome)";
+    class DAOServicos {
+        public function cadastrar(Servico $servico) {
+            $sql = "INSERT INTO servicos VALUES (default, :nome)";
             $con = Conexao::getInstance()->prepare($sql);
-            $con->bindValue(":nome", $cliente->getNome());
+            $con->bindValue(":nome", $servico->getNome());
             $con->execute();
-            echo "Cadastrado com sucesso";
+            return "Cadastrado com sucesso";
         }
     }
 ?>

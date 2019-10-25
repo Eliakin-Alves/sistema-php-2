@@ -1,5 +1,5 @@
 <?php
-    class Cliente{
+    class Servico{
         private $id;
         private $nome;
         public function __construct(){

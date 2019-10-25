@@ -11,7 +11,7 @@
             $con->bindValue(":telefone", $cliente->getTelefone());
             $con->bindValue(":email", $cliente->getEmail());
             $con->execute();
-            echo "Cadastrado com sucesso";
+            return "Cadastrado com sucesso";
         }
     }
 ?>

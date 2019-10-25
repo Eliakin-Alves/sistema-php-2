@@ -12,10 +12,10 @@
             $obj->setTelefone($_POST['telefone']);
             $obj->setEmail($_POST['email']);
             $DAO = new DAOCliente();
-            $DAO->cadastrar($obj);
+            $msg = $DAO->cadastrar($obj);
         }
         catch(Exception $e) {
-            echo $e->getMenssagem();
+            $msg = $e->getMenssagem();
         }
     }
 ?>
