@@ -20,10 +20,10 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-            <a class="nav-link" href="index.php">Home</a>
+            <a class="nav-link" href="index.php">Inicio</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="clientes-lista.php">Lista de Clientes</a>
+            <a class="nav-link" href="lista-clientes.php">Lista de Clientes</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="cliente-cadastro.php">Cliente Cadastro</a>

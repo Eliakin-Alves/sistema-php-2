@@ -1,3 +1,3 @@
-<?php include "includes/header.php";?>
+<?php include "view/header.php";?>
     <h1>cadastro</h1>
-<?php include "includes/footer.php";?>
+<?php include "view/footer.php";?>
