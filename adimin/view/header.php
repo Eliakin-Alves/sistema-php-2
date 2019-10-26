@@ -26,6 +26,9 @@
             <a class="nav-link" href="cliente-lista.php">Lista de Clientes</a>
         </li>
         <li class="nav-item">
+            <a class="nav-link" href="../cliente-cadastro.php">Cliente Cadastro</a>
+        </li>
+        <li class="nav-item">
             <a class="nav-link" href="cadastro-servicos.php">Cadastro de Serviços</a>
         </li>
     </ul>
