@@ -7,8 +7,8 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <title>Olá, mundo!</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Cadastro</title>
   </head>
   <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -30,6 +30,9 @@
         </li>
         <li class="nav-item">
             <a class="nav-link" href="cadastro-servicos.php">Cadastro de Serviços</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="cadastro-usuario.php">Usuário</a>
         </li>
     </ul>
   </div>

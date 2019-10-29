@@ -1,4 +1,4 @@
-<?php include "includes/listar-clientes.php" ?>
+<?php include "actions/listar-clientes.php" ?>
 <?php include "view/header.php" ?>
 <?php include "view/lista-cliente.php" ?>
 <?php include "view/mensagem.php" ?>

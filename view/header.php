@@ -31,6 +31,9 @@
         <li class="nav-item">
             <a class="nav-link" href="adimin/cadastro-servicos.php">Cadastro de Serviços</a>
         </li>
+        <li class="nav-item">
+            <a class="nav-link" href="adimin/cadastro-usuario.php">Usuário</a>
+        </li>
     </ul>
   </div>
 </nav>
