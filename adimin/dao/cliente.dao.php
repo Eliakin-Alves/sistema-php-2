@@ -14,7 +14,7 @@
             return "Cadastrado com sucesso";
         }
         public function listaClientes() {
-            $sql = "SELECT * FROM cliente";
+            $sql = "SELECT * FROM cliente WHERE p_id = id";
             $con = Conexao::getInstance()->prepare($sql);
             $con->execute();
             $lista = array();

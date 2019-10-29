@@ -7,5 +7,6 @@
             $con->execute();
             return "Cadastrado com sucesso";
         }
+        
     }
 ?>

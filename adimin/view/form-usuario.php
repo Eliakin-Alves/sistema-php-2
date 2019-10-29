@@ -1,5 +1,5 @@
 <div class="container">
-    <form class="form-horizontal" method="post" action="cadastro-usuario.php">
+    <form class="form-horizontal" method="post" action="ctrl-cadastro-usuario.php">
         <fieldset>
             <!-- Form Name -->
             <h1>Cadastro Usuario</h1>

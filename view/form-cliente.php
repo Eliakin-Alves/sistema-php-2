@@ -1,4 +1,4 @@
-<form class="form-horizontal" method="post" action="cliente-cadastro.php">
+<form class="form-horizontal" method="post" action="ctrl-cliente-cadastro.php">
   <fieldset>
 
   <!-- Form Name -->

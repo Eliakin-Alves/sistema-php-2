@@ -23,16 +23,16 @@
             <a class="nav-link" href="index2.php">Inicio</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="cliente-lista.php">Lista de Clientes</a>
+            <a class="nav-link" href="ctrl-cliente-lista.php">Lista de Clientes</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="../cliente-cadastro.php">Cliente Cadastro</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="cadastro-servicos.php">Cadastro de Serviços</a>
+            <a class="nav-link" href="ctrl-cadastro-servicos.php">Cadastro de Serviços</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="cadastro-usuario.php">Usuário</a>
+            <a class="nav-link" href="ctrl-cadastro-usuario.php">Usuário</a>
         </li>
     </ul>
   </div>

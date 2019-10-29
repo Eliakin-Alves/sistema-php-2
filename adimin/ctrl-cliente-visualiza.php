@@ -1,5 +1,5 @@
-<?php include "actions/cliente-cadastrar.php"; ?>
+<?php include "actions/buscar-cliente-id.php"; ?>
 <?php include "view/header.php"; ?>
-<?php include "view/form-cliente.php"; ?>
+<?php include "adimin/visualiza-cliente.php"; ?>
 <?php include "view/mensagem.php"; ?>
 <?php include "view/footer.php"; ?>
