@@ -9,16 +9,15 @@
             return "Cadastrado com sucesso";
         }
 
-        public function buscaPorId($id) {
-            $sql = "SELECT * FROM usuario WHERE pk_usuario = :id";
+        public function listaUsuarios() {
+            $sql = "SELECT * FROM usuario";
             $con = Conexao::getInstance()->prepare($sql);
-            $con->bindValue(":id", $id);
             $con->execute();
-
-            $usuario = new Usuario();
-            $usuario = $con->fetch(PDO::FETCH_ASSOC);
-            print_r($usuario); //testar saída
-            return $usuario;
+            $lista = array();
+            while($usuario = $con->fetch(PDO::FETCH_ASSOC)){
+                $lista[] = $usuario;
+            }
+            return $lista;
         }
     }
 ?>
