@@ -3,7 +3,7 @@
         <fieldset>
 
         <!-- Form Name -->
-        <h1>Cliente Cadastro</h1>
+        <h1>Novos Serviços</h1>
 
         <!-- Text input-->
         <div class="form-group">

@@ -26,7 +26,7 @@
             <a class="nav-link" href="adimin/ctrl-cliente-lista.php">Lista de Clientes</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="cliente-cadastro.php">Cliente Cadastro</a>
+            <a class="nav-link" href="cliente-cadastro.php">Novo Serviço</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="adimin/ctrl-cadastro-servicos.php">Cadastro de Serviços</a>
