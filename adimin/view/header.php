@@ -34,6 +34,9 @@
         <li class="nav-item">
             <a class="nav-link" href="ctrl-cadastro-usuario.php">Usuário</a>
         </li>
+        <li class="nav-item">
+            <a class="nav-link" href="ctrl-usuario-visualiza.php">Visualizar</a>
+        </li>
     </ul>
   </div>
 </nav>
