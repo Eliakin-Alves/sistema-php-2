@@ -34,7 +34,7 @@
                 <div class="form-group">
                     <label class="col-md-4 control-label" for="cadastrar"></label>
                 <div class="col-md-4">
-                    <button id="cadastrar" name="cadastrar" class="btn btn-primary">Visualizar</button>
+                    <button id="cadastrar" name="cadastrar" class="btn btn-primary">cadastrar</button>
                 </div>
             </div>
         </fieldset>

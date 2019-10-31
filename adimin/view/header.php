@@ -31,9 +31,7 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="ctrl-cliente-lista.php">Lista de Clientes</a>
-        </div>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="ctrl-cliente-lista.php">Novo Cliente</a>
+          <a class="dropdown-item" href="ctrl-usuario-visualiza.php">Novo Cliente</a>
         </div>
       </li>
       <li class="nav-item dropdown">
