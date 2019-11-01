@@ -51,6 +51,16 @@
           <a class="dropdown-item" href="ctrl-servicos-lista.php">Listar Serviços</a>
           <a class="dropdown-item" href="ctrl-cadastro-servicos.php">Novo Serviço</a>
         </div>
+      </li>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Produtos
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item disabled" href="ctrl-lista-produto.php">Listar Produtos</a>
+          <a class="dropdown-item" href="ctrl-produto-cadastro.php">Novo Produto</a>
+        </div>
       </li><!--
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

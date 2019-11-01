@@ -14,7 +14,15 @@
             return "Cadastrado com sucesso";
         }
         public function listaProdutos() {
-            $sql = "SELECT * FROM produto";
+            $sql = "SELECT
+            produto.nome,
+            produto.preco,
+            produto.pk_produto as 'id',
+            servicos.nome as 'servicos'
+            
+            from produto
+            INNER JOIN servicos
+            ON produto.fk_produto_servico = servicos.pk_departamento";
             $con = Conexao::getInstance()->prepare($sql);
             $con->execute();
             $lista = array();

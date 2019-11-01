@@ -1,7 +1,7 @@
 <?php
-    include 'model/conexao.php';
-    include 'model/usuario.class.php';
-    include 'dao/usuario.dao.php';
+    require_once 'model/conexao.php';
+    require_once 'model/usuario.class.php';
+    require_once 'dao/usuario.dao.php';
     if($_POST) {
         try {
             $obj = new Usuario();

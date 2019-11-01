@@ -1,7 +1,7 @@
 <?php
-    include 'model/conexao.php';
-    include 'model/servico.class.php';
-    include 'dao/servicos.dao.php';
+    require_once 'model/conexao.php';
+    require_once 'model/servico.class.php';
+    require_once 'dao/servicos.dao.php';
     if($_POST) {
         try {
             $obj = new Servico();
