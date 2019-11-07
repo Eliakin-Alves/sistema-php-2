@@ -1,4 +1,5 @@
 <?php
+    namespace LOJA\Model;
     class Servico{
         private $id;
         private $nome;

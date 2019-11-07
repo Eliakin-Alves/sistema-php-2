@@ -1,4 +1,7 @@
 <?php
+    namespace LOJA\DAO;
+    use LOJA\Model\Conexao;
+    use LOJA\Model\Servico;
     class DAOServicos {
         public function cadastrar(Servico $servicos) {
             $sql = "INSERT INTO servicos VALUES (default, :nome)";
