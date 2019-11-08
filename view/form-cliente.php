@@ -1,4 +1,5 @@
-<form class="form-horizontal" method="post" action="ctrl-cliente-cadastro.php">
+<?php include "view/header.php" ?>
+<form class="form-horizontal" method="post" action="cadastrar">
   <fieldset>
 
   <!-- Form Name -->
@@ -68,3 +69,4 @@
 
   </fieldset>
   </form>
+  <?php include "view/footer.php" ?>

@@ -1,8 +1,9 @@
 <?php
-namespace LOJA\Actions;
+namespace LOJA\API;
 use LOJA\Model\Servico;
 use LOJA\DAO\DAOServicos;
     class ServicosCadastrar {
+        public $msg;
         function __construct(){
     
             if($_POST) {
@@ -10,10 +11,10 @@ use LOJA\DAO\DAOServicos;
                     $obj = new Servico();
                     $obj->setNome($_POST['nome']);
                     $DAO = new DAOServicos();
-                    $msg = $DAO->cadastrar($obj);
+                    $this->msg = $DAO->cadastrar($obj);
                 }
                 catch(Exception $e) {
-                    $msg = $e->getMenssagem();
+                    $this->$msg = $e->getMessage();
                 }
             }
         }

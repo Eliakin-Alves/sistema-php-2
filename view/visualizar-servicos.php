@@ -1,19 +1,18 @@
 <?php include "view/header.php" ?>
 <div class="container">
-    <form class="form-horizontal" method="post" action="cadastrar">
+    <form class="form-horizontal offset-md-3" method="POST" action="ctrl-usuario-visualiza.php">
         <fieldset>
-
             <!-- Form Name -->
-            <h1>Novos Serviços</h1>
-
+            <legend>Servicos</legend>
             <!-- Text input-->
             <div class="form-group">
-                <label class="col-md-4 control-label" for="nome"></label>  
+                <label class="col-md-4 control-label" for="textinput">Nome</label>  
                 <div class="col-md-4">
-                    <input id="nome" name="nome" type="text" placeholder="Nome" class="form-control input-md">
+                    <input id="nome" name="nome" value="<?php echo $servico['nome']?>" type="text" placeholder="" class="form-control input-md" required="">
                 </div>
             </div>
-                <!-- Button -->
+
+            <!-- Button -->
             <div class="form-group">
                 <label class="col-md-4 control-label" for="cadastrar"></label>
                 <div class="col-md-4">
