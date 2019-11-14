@@ -1,48 +1,60 @@
 <?php include "view/header.php" ?>
-<div class="container">
-    <form class="form-horizontal" method="post" action="cadastrar">
-        <fieldset>
 
+<form class="form-horizontal" method="post" action="cadastrar" enctype="multipart/form-data">
+        <fieldset>
             <!-- Form Name -->
-            <h1>Cadastrar Produtos</h1>
+            <legend>Cadastro de Produtos</legend>
 
             <!-- Text input-->
             <div class="form-group">
-                <label class="col-md-4 control-label" for="nome"></label>  
+                <label class="col-md-4 control-label" for="nome">Nome</label>  
                 <div class="col-md-4">
-                    <input id="nome" name="nome" type="text" placeholder="Nome" class="form-control input-md">
+                    <input id="nome" name="nome" type="text" placeholder="" class="form-control input-md" required="">
                 </div>
             </div>
+            <!-- Text input-->
             <div class="form-group">
-                <label class="col-md-4 control-label" for="preco"></label>  
+                <label class="col-md-4 control-label" for="preco">Preço</label>  
                 <div class="col-md-4">
-                    <input id="preco" name="preco" type="text" placeholder="Preco" class="form-control input-md">
+                    <input id="preco" name="preco" type="text" placeholder="" class="form-control input-md" required="">
                 </div>
             </div>
+            <!-- Text input-->
             <div class="form-group">
-                <label class="col-md-4 control-label" for="descricao"></label>  
+                <label class="col-md-4 control-label" for="departamento">Departamento</label>  
                 <div class="col-md-4">
-                    <input id="descricao" name="descricao" type="text" placeholder="Descricao" class="form-control input-md">
-                </div>
-            </div>
-            <div class="form-group">
-                <label class="col-md-4 control-label" for="servico"></label>  
-                <div class="col-md-4">
-                    <select name="servico" class="form-control input-md">
-                        <?php foreach($lista as $servicos) { ?>
-                            <option value="<?php echo $servicos['pk_departamento']; ?>"><?php echo $servicos['nome']; ?></option>
+                   <select name="servico" class="form-control input-md">
+                    <?php foreach($lista as $departamento) { ?>
+                            <option value="<?php echo $departamento['pk_departamento'] ?>">
+                            <?php echo $departamento['nome'] ?></option>
                         <?php } ?>
-                    </select>
+                   </select>
                 </div>
             </div>
-                <!-- Button -->
+            <!-- Text input-->
             <div class="form-group">
-                <label class="col-md-4 control-label" for="cadastrar"></label>
+                <label class="col-md-4 control-label" for="descricao">Descricao</label>  
                 <div class="col-md-4">
-                    <button id="cadastrar" name="cadastrar" class="btn btn-primary">Cadastrar</button>
+                    <input id="descricao" name="descricao" type="text" placeholder="" class="form-control input-md" required="">
                 </div>
             </div>
-        </fieldset>
-    </form>
-</div>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="descricao">Imagem    </label>  
+                <div class="col-md-4">
+  <input id="imagem" name="imagem" type="file" placeholder="" class="form-control input-md" required="">
+  </div>
+            </div>
+
+            <!-- Button -->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="singlebutton"></label>
+            <div class="col-md-4">
+                <button id="singlebutton" name="singlebutton" class="btn btn-primary">Cadastrar</button>
+            </div>
+        </div>
+
+    </fieldset>
+</form>
 <?php include "view/footer.php" ?>

@@ -1,5 +1,5 @@
 <?php include "view/header.php" ?>
-<form class="form-horizontal" method="post" action="cadastrar">
+<form class="form-horizontal" method="post" action="ctrl-cliente-cadastro.php">
         <fieldset>
 
         <!-- Form Name -->
@@ -9,7 +9,7 @@
         <div class="form-group">
         <label class="col-md-4 control-label" for="nome">Nome</label>  
         <div class="col-md-4">
-        <input id="nome" name="nome" type="text" placeholder="" class="form-control input-md" required="">
+        <input id="nome" name="nome" value="<?php echo $cliente['nome']; ?>" type="text" placeholder="" class="form-control input-md" required="">
             
         </div>
         </div>
@@ -18,7 +18,7 @@
         <div class="form-group">
         <label class="col-md-4 control-label" for="telefone">Telefone</label>  
         <div class="col-md-4">
-        <input id="telefone" name="telefone" type="text" placeholder="" class="form-control input-md" required="">
+        <input id="telefone" name="telefone" value="<?php echo $cliente['telefone']; ?>" type="text" placeholder="" class="form-control input-md" required="">
             
         </div>
         </div>
@@ -27,7 +27,7 @@
         <div class="form-group">
         <label class="col-md-4 control-label" for="email">E-mail</label>  
         <div class="col-md-4">
-        <input id="email" name="email" type="text" placeholder="" class="form-control input-md" required="">
+        <input id="email" name="email" type="text" value="<?php echo $cliente['email']; ?>" placeholder="" class="form-control input-md" required="">
             
         </div>
         </div>
@@ -36,7 +36,7 @@
         <div class="form-group">
         <label class="col-md-4 control-label" for="cpf">CPF</label>  
         <div class="col-md-4">
-        <input id="cpf" name="cpf" type="text" placeholder="" class="form-control input-md" required="">
+        <input id="cpf" name="cpf" type="text" placeholder="" value="<?php echo $cliente['cpf']; ?>"  class="form-control input-md" required="">
             
         </div>
         </div>
@@ -51,4 +51,5 @@
 
         </fieldset>
         </form>
+        
         <?php include "view/footer.php" ?>

@@ -1,3 +1,3 @@
-<?php include "view/header.php";?>
-    <h1>cadastro</h1>
-<?php include "view/footer.php";?>
+<?php
+    header("location: http://127.0.0.1/sistema-php-2/home.php")
+?>

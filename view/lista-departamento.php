@@ -8,12 +8,12 @@
                 </tr>
             </thead>
             <tbody>
-                <?php foreach($lista as $usuario) { ?>
+                <?php foreach($lista as $departamento) { ?>
                 <tr>
-                    <th scope="row"><?php echo $usuario['pk_usuario'] ?></th>
-                    <td><?php echo $usuario['nome'] ?></td>
+                    <th scope="row"><?php echo $departamento['pk_departamento'] ?></th>
+                    <td><?php echo $departamento['nome'] ?></td>
                 </tr>  
                 <?php } ?>
             </tbody>
         </table>
-        <?php include "view/footer.php" ?>
+<?php include "view/footer.php" ?>

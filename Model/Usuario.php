@@ -1,4 +1,5 @@
 <?php
+namespace LOJA\Model;
     class Usuario{
         private $id;
         private $nome;

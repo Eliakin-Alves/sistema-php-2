@@ -10,7 +10,7 @@
                     $obj = new Cliente();
                     $obj->setNome($_POST['nome']);
                     $obj->setCpf($_POST['cpf']);
-                    $obj->setEndereco($_POST['endereco']);
+                    $obj->setEndereco($_POST['endereço']);
                     $obj->setCep($_POST['cep']);
                     $obj->setTelefone($_POST['telefone']);
                     $obj->setEmail($_POST['email']);

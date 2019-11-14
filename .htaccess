@@ -1,5 +1,6 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
+    RewriteRule ^([a-z0-9-]+)?$ controller.php?model=$1 [NC,L]
     RewriteRule ^([a-z0-9-]+)/([a-z0-9-]+)?$ controller.php?model=$1&action=$2 [NC,L]
     RewriteRule ^([a-z0-9-]+)/([a-z0-9-]+)/([a-z0-9-]+)?$ controller.php?model=$1&action=$2&id=$3 [NC,L]
 </IfModule>

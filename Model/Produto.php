@@ -1,9 +1,11 @@
 <?php
+    namespace LOJA\Model;
     class Produto {
         private $id;
         private $nome;
         private $preco;
         private $descricao;
+        private $imagem;
         private $servico; // Objeto($id e $nome)
 
         function __construct(){
@@ -39,6 +41,14 @@
 
         public function setDescricao($descricao){
             $this->descricao = $descricao;
+        }
+
+        public function getImagem(){
+            return $this->imagem;
+        }
+
+        public function setImagem($imagem){
+            $this->imagem = $imagem;
         }
 
         public function getServico(){
