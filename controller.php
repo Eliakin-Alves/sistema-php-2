@@ -82,6 +82,11 @@
             $view = "form-login-adm.php";
         break;
 
+        case 'carrinho':
+            // $obj = new \LOJA\API\UsuarioLogoff;
+            $view = "cart.php";
+        break;
+
         case 'home':
             $view = "home.php";
             break;
