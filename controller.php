@@ -6,7 +6,7 @@
     $view = "";
 
     // config
-    $url = "http://localhost/lojatrio";
+    $url = "http://127.0.0.1/sistema-php-2/";
 
     switch($router){
 
