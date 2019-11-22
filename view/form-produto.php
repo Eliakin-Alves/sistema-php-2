@@ -21,12 +21,12 @@
             </div>
             <!-- Text input-->
             <div class="form-group">
-                <label class="col-md-4 control-label" for="departamento">Departamento</label>  
+                <label class="col-md-4 control-label" for="servico">Serviços</label>  
                 <div class="col-md-4">
                    <select name="servico" class="form-control input-md">
-                    <?php foreach($lista as $departamento) { ?>
-                            <option value="<?php echo $departamento['pk_departamento'] ?>">
-                            <?php echo $departamento['nome'] ?></option>
+                    <?php foreach($lista as $servicos) { ?>
+                            <option value="<?php echo $servicos['pk_departamento'] ?>">
+                            <?php echo $servicos['nome'] ?></option>
                         <?php } ?>
                    </select>
                 </div>

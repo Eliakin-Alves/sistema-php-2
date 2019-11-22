@@ -28,7 +28,7 @@
                    <form action="adm" method="post" name="login">
                            <div class="form-group">
                               <label for="nome">EMAIL</label>
-                              <input type="nome" name="nome"  class="form-control" id="nome" aria-describedby="nome" placeholder="Email">
+                              <input type="nome" name="nome"  class="form-control" id="nome" aria-describedby="nome" placeholder="Ex: joao.santos@gmail.com">
                            </div>
                            <div class="form-group">
                               <label for="senha">SENHA</label>
