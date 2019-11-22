@@ -3,7 +3,7 @@
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
-
+</div>
 <footer class="section footer-classic bg-dark bg-yellow context-dark bg-image" style="background: #2d3246;">
         <div class="container">
           <div class="row row-30">
@@ -47,7 +47,7 @@
           <div class="col"><a class="social-inner bg-yellow" href="#"><span class="icon mdi mdi-instagram"></span><span>instagram</span></a></div>
           <div class="col"><a class="social-inner bg-yellow" href="#"><span class="icon mdi mdi-twitter"></span><span>twitter</span></a></div>
           <div class="col"><a class="social-inner bg-yellow" href="#"><span class="icon mdi mdi-youtube-play"></span><span>google</span></a></div>
-        </div>
+        
     </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

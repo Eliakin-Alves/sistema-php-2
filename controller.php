@@ -1,101 +1,179 @@
 <?php 
-    session_start();
-    require "includes/autoload.php";
-    @$router = $_GET['model'].$_GET['action'];
+     
+     session_start();
+
+   //capturando os dados da url
+    //ex.: admin/departamento/cadastrar/listar
+    //model=departamento & action-listar
+    require "incluedes/autoload.php";
     
+    $router = $_GET['model'].$_GET['action'];
     $view = "";
 
-    // config
-    $url = "http://127.0.0.1/sistema-php-2/";
+    $url = "http://localhost/carro";
 
     switch($router){
+    //router = departamentolistar
 
-        case 'servicoscadastrar':
-            
-            $obj = new \LOJA\API\ServicosCadastrar;
+            // PARTE DO SERVIÇO <>
+        case 'servicocadastrar':
+            \LOJA\incluedes\Seguranca::restritoAdm();
+
+            $obj = new \LOJA\API\ServicoCadastrar;
             $msg = $obj->msg;
-            $view = "form-servicos.php";
+            $view = "form-servico.php";
             break;
 
-        case 'servicoslistar':
-            \LOJA\includes\Seguranca::restritoAdm();
-            $obj = new \LOJA\API\ServicosListar;
+        case 'servicolistar':
+
+            $obj = new \LOJA\API\ServicoListar;
             $lista = $obj->lista;
-            $view = "lista-servicos.php";
+            $view = "lista-servico.php";
             break;
 
-        case 'servicosvisualizar':
-            $obj = new \LOJA\API\ServicosVisualizar;
-            $departamento = $obj->dados;
-            $view = "visualizar-servicos.php";
+        case 'servicovizualizar':
+              
+            \LOJA\incluedes\Seguranca::restritoAdm();
+            $obj = new \LOJA\API\ServicoVizualizar;
+            $servico = $obj->dados;
+            $view = "vizualizar-servico-id.php";
+            break;
+            //^^ PARTE DO SERVIÇO  ^^ 
+           
+            // PARTE DO CLIENTE <>
+        case 'logincliente':
+            $obj = new \LOJA\API\ClienteLogar;
+            $msg = $obj->msg;
+            $view = "form-cliente-login.php";
             break;
 
-
-        case 'clientecadastrar':
+        case 'clientelistar':
+            \LOJA\incluedes\Seguranca::restritoAdm();
+            $obj = new \LOJA\API\ClienteListar;
+            $lista = $obj->lista;
+            $view = "lista-cliente.php";
+            break;
             
+        case 'clientecadastrar':
+     
             $obj = new \LOJA\API\ClienteCadastrar;
             $msg = $obj->msg;
             $view = "form-cliente.php";
             break;
 
-        case 'clientelistar':
-            $obj = new \LOJA\API\ClienteListar;
-            $lista = $obj->lista;
-            $view = "lista-cliente.php";
-            break;
-
-        case 'clientevisualizar':
-            $obj = new \LOJA\API\ClienteVisualizar;
+        case 'clientevizualizar':
+            \LOJA\incluedes\Seguranca::restritoAdm();
+            $obj = new \LOJA\API\ClienteVizualizar;
             $cliente = $obj->dados;
-            $view = "visualiza-cliente.php";
+            $view = "vizualizar-cliente-id.php";
             break;
-            // 
-        case 'produtolistar':
-            $obj = new \LOJA\API\ProdutoListar;
-            $lista = $obj->lista;
-            $view = "lista-produto.php";
+        case 'painelcliente':
+           
+            $obj = new \LOJA\API\ClienteLogar;
+                
+            $view = "painel-cliente.php";
             break;
+    
+        case 'painellogoff':
+                $obj = new \LOJA\API\ClienteLogoff;
+                    
+                $view = "form-cliente-login.php";
+                break;
 
+            // PARTE DO CLIENTE ^^ 
+        
+          // PARTE DO PRODUTO <> 
         case 'produtocadastrar':
-            
+            \LOJA\incluedes\Seguranca::restritoAdm();
             $obj = new \LOJA\API\ProdutoCadastrar;
             $msg = $obj->msg;
 
-            $obj2 = new \LOJA\API\ServicosListar;                ;
+            $obj2 = new \LOJA\API\ServicoListar;
             $lista = $obj2->lista;
 
             $view = "form-produto.php";
             break;
 
+            case 'produtolistar':
+                $obj = new \LOJA\API\ProdutoListar;
+                $lista = $obj->lista;
+                $view = "lista-produto.php";
+                break;
+            
+            // PARTE DO PRODUTO  ^^
+
+       
+
+           
+            // PARTE DO FORNECEDOR <>
+
+        case 'fornecedorcadastrar':
+            \LOJA\incluedes\Seguranca::restritoAdm();
+            $obj = new \LOJA\API\FornecedorCadastrar;
+            $msg = $obj->msg;
+            $view = "form-fornecedor.php";
+            break;
+
+        case 'fornecedorlistar':
+            \LOJA\incluedes\Seguranca::restritoAdm();
+            $obj = new \LOJA\API\FornecedorListar;
+            $lista = $obj->lista;
+            $view = "lista-fornecedor.php";
+            break;
+            // PARTE DO FORNECEDOR ^^
+
+            // PARTE DOS ADMIN <>
+        case 'usuariolistar':
+              \LOJA\incluedes\Seguranca::restritoAdm();
+             $obj = new \LOJA\API\UsuarioListar;
+             $lista = $obj->lista;
+             $view = "lista-usuario.php";
+             break;
+    
+        case 'usuariovizualizar':
+            \LOJA\incluedes\Seguranca::restritoAdm();
+            $obj = new \LOJA\API\UsuarioVizualizar;
+            $usuario = $obj->dados;
+            $view = "vizualiza-usuario-id.php";
+            break;
+
+
+        case 'usuariocadastrar':
+            \LOJA\incluedes\Seguranca::restritoAdm();
+             $obj = new \LOJA\API\UsuarioCadastrar;
+             $msg = $obj->msg;
+           
+             $view = "form-usuario.php";
+             break;
+
         case 'loginadm':
             $obj = new \LOJA\API\UsuarioLogar;
             $msg = $obj->msg;
-            $view = "form-login-adm.php";
-        break;
-
+            $view = "form-adm.php";
+            break;
+            
         case 'paineladm':
+            \LOJA\incluedes\Seguranca::restritoAdm();
+            $obj = new \LOJA\API\UsuarioLogar;
+            
             $view = "painel-adm.php";
-        break;
-
-        case 'painellogoff':
-            $obj = new \LOJA\API\UsuarioLogoff;
-            $view = "form-login-adm.php";
-        break;
-
-        case 'carrinho':
-            // $obj = new \LOJA\API\UsuarioLogoff;
-            $view = "cart.php";
-        break;
-
-        case 'home':
-            $view = "home.php";
             break;
 
+        case 'painellogoff':
+                $obj = new \LOJA\API\UsuarioLogoff;
+                
+                $view = "form-adm.php";
+                break;
+            
+            // PARTE DOS ADMIN ^^
+
+       
         default:
-            echo "default";
-        break;
+            $view = "form-cliente.php";
+        break; 
     }
 
+    
     include "view/{$view}";
 
 ?>
