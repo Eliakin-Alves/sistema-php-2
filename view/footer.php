@@ -1,48 +1,52 @@
 <?php include "view/mensagem.php"; ?>
-<footer class=" py-5 bg-dark">
-      <div class="container row">
-        <div class="col-12 col-md">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mb-2"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></svg>
-          <small class="d-block mb-3 text-muted bg-yellow">© 2017-2018</small>
+<!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<footer class="section footer-classic bg-dark bg-yellow context-dark bg-image" style="background: #2d3246;">
+        <div class="container">
+          <div class="row row-30">
+            <div class="col-md-4 col-xl-5">
+              <div class="pr-xl-4"><a class="brand" href="index.html"><img class="brand-logo-light" src="images/agency/logo-inverse-140x37.png" alt="" width="140" height="37" srcset="images/agency/logo-retina-inverse-280x74.png 2x"></a>
+                <p class="bg-yellow">Somos uma agência mecanica, criativa, premiada e dedicada ao melhor resultado para a vida util do seu carro, promoção, consultoria e mecanicos 24 horas ao seu dispor.</p>
+                <!-- Rights-->
+                <p class="rights bg-yellow"><span class="bg-yellow">©</span><span class="copyright-year bg-yellow">2019</span><span> </span><span class="bg-yellow">Ondas</span><span class="bg-yellow">. </span><span class="bg-yellow">Todos os direitos reservados.</span></p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <h5>Contatos</h5>
+              <dl class="contact-list">
+                <dt>Endereço:</dt>
+                <dd>Rua dos Bobos Número 0</dd>
+              </dl>
+              <dl class="contact-list">
+                <dt>email:</dt>
+                <dd><a href="mailto:#" class="bg-yellow">eliakin.caio.gabriel@gmail.com</a></dd>
+              </dl>
+              <dl class="contact-list">
+                <dt>phones:</dt>
+                <dd><a href="tel:#" class="bg-yellow">https://karosearch.com</a> <span>or</span> <a href="tel:#" class="bg-yellow">https://karosearch.com</a>
+                </dd>
+              </dl>
+            </div>
+            <div class="col-md-4 col-xl-3">
+              <h5>Links</h5>
+              <ul class="nav-list">
+                <li><a href="#" class="bg-yellow">Sobre</a></li>
+                <li><a href="#" class="bg-yellow">Projetos</a></li>
+                <li><a href="#" class="bg-yellow">Blog</a></li>
+                <li><a href="#" class="bg-yellow">Contatos</a></li>
+                <li><a href="#" class="bg-yellow">Preços</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
-            <div class="col-6 col-md">
-            <h5 class="bg-yellow">Features</h5>
-            <ul class="list-unstyled text-small">
-                <li><a class="text-muted bg-yellow" href="#">Cool stuff</a></li>
-                <li><a class="text-muted bg-yellow" href="#">Random feature</a></li>
-                <li><a class="text-muted bg-yellow" href="#">Team feature</a></li>
-                <li><a class="text-muted bg-yellow" href="#">Stuff for developers</a></li>
-                <li><a class="text-muted bg-yellow" href="#">Another one</a></li>
-                <li><a class="text-muted bg-yellow" href="#">Last time</a></li>
-            </ul>
-            </div>
-            <div class="col-6 col-md">
-            <h5 class="bg-yellow">Resources</h5>
-            <ul class="list-unstyled text-small">
-                <li><a class="text-muted bg-yellow" href="#">Resource</a></li>
-                <li><a class="text-muted bg-yellow" href="#">Resource name</a></li>
-                <li><a class="text-muted bg-yellow" href="#">Another resource</a></li>
-                <li><a class="text-muted bg-yellow" href="#">Final resource</a></li>
-            </ul>
-            </div>
-            <div class="col-6 col-md">
-            <h5 class="bg-yellow">Resources</h5>
-            <ul class="list-unstyled text-small">
-                <li><a class="text-muted bg-yellow" href="#">Business</a></li>
-                <li><a class="text-muted bg-yellow" href="#">Education</a></li>
-                <li><a class="text-muted bg-yellow" href="#">Government</a></li>
-                <li><a class="text-muted bg-yellow" href="#">Gaming</a></li>
-            </ul>
-            </div>
-            <div class="col-6 col-md">
-            <h5 class="bg-yellow">About</h5>
-            <ul class="list-unstyled text-small">
-                <li><a class="text-muted bg-yellow" href="#">Team</a></li>
-                <li><a class="text-muted bg-yellow" href="#">Locations</a></li>
-                <li><a class="text-muted bg-yellow" href="#">Privacy</a></li>
-                <li><a class="text-muted bg-yellow" href="#">Terms</a></li>
-            </ul>
-            </div>
+        <div class="row no-gutters social-container">
+          <div class="col"><a class="social-inner bg-yellow" href="#"><span class="icon mdi mdi-facebook"></span><span>Facebook</span></a></div>
+          <div class="col"><a class="social-inner bg-yellow" href="#"><span class="icon mdi mdi-instagram"></span><span>instagram</span></a></div>
+          <div class="col"><a class="social-inner bg-yellow" href="#"><span class="icon mdi mdi-twitter"></span><span>twitter</span></a></div>
+          <div class="col"><a class="social-inner bg-yellow" href="#"><span class="icon mdi mdi-youtube-play"></span><span>google</span></a></div>
         </div>
     </footer>
     <!-- Optional JavaScript -->

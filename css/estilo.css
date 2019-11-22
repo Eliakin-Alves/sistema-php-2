@@ -127,27 +127,29 @@ body{
 
 /*-----------------------------------------------------------------*/
 /*css do caio*/
-.por{
-   
-    height: 40px; 
-    }
-    .moto{
-     height: 50px;
-    }
-    .bri{
-     height: 50px;
-    }
-    .row{
-        margin-top: 50px !important;
-    }
-    .bb{
-        margin-top: 100px;
-    
-    }
-    .texc{
-    color: #1E9ACD !important;
-    }
+body{
+    background-image: url(../cima.jpg);
+    background-attachment: fixed;
+    background-size: auto;
+    background-repeat: no-repeat;
 }
+.ww{
+
+
+}
+.tt{
+    margin-top: 5%;
+}
+.jj{
+color: white;
+}
+
+
+.card{
+   /* margin-top: 5%;*/
+}
+
+
 /* cart */
 .quantity {
     float: left;
