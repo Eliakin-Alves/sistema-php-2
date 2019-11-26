@@ -1,12 +1,14 @@
 <?php
     namespace LOJA\API;
 
-    class UsuarioLogoff {
-        function __construct() {
-            unset($_SESSION['usuarioid']);
+    class UsuarioLogoff{
+
+        function __construct(){
+            unset($_SESSION['usuarioid']); //SESSION é PARA DESTRUI A INFORMAÇÃo para deslogar
             unset($_SESSION['usuarionome']);
             unset($_SESSION);
-            header("location: http://127.0.0.1/sistema-php-2/login/adm");
+            header("location: http://localhost/carro/login/adm");
+
         }
     }
 ?>

@@ -9,7 +9,7 @@ class ProdutoListar{
    function __construct(){
         $obj = new DAOProduto();
 
-        $this->lista = $obj->listaProdutos();
+        $this->lista = $obj->listaProduto();
    }
 }
 ?>

@@ -27,16 +27,16 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link bg-yellow" href="<? echo $url; ?>/cliente/cadastrar">Inicio</a>
+                            <a class="nav-link bg-yellow" href="<?php echo $url; ?>home">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link bg-yellow" href="<? echo $url; ?>/produto/cadastrar">Produtos</a>
+                            <a class="nav-link bg-yellow" href="<?php echo $url; ?>produto/cadastrar">Produtos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link bg-yellow" href="https://www.google.com.br/">Serviços</a>
+                            <a class="nav-link bg-yellow" href="<?php echo $url; ?>servicos/cadastrar">Serviços</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link bg-yellow" href="https://www.vasco.com.br/prehome/">Contato</a>
+                            <a class="nav-link bg-yellow" href="#">Contato</a>
                         </li>
                     </ul>
                     <!-- <form class="form-inline my-2 my-lg-0"> -->

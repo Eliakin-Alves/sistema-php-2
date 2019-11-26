@@ -1,21 +1,23 @@
 <?php
-namespace LOJA\Model;
-class Conexao{
-    public static $instance;
-    private function __construct(){
-        
-    }
-    public static function getInstance(){
-        try {
-            $conexao = new \PDO("mysql:host=localhost; dbname=loja", "root", "");
-            $conexao->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
-            $conexao->exec("set names utf8");
+
+    namespace LOJA\Model;
+
+    class Conexao{
+        private function __construct(){
             
-            return $conexao;
-        } catch (\PDOException $erro) {
-            
-            return null;
+        }
+        public static function getInstance(){
+            try {
+                $conexao = new \PDO("mysql:host=localhost; dbname=bigode", "root", "");
+                $conexao->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
+                $conexao->exec("set names utf8");
+                
+                return $conexao;
+            } catch (\PDOException $erro) {
+                
+                
+                return null;
+            }
         }
     }
-}
 ?>
