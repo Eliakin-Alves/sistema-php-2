@@ -1,0 +1,220 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Jomolhari', serif;
+    background-image: url(../cima.jpg);
+    background-attachment: fixed;
+    background-size: auto;
+    background-repeat: no-repeat;
+    padding-top:4.2rem;
+    padding-bottom:4.2rem;
+}
+.bg-yellow {
+    color: #000 !important;
+}
+.bg-dark {
+    background-color: #E3E7E8 !important;
+}
+.my-sm-0 {
+    color: #1E9ACD !important;
+    background-color: #97C5D8 !important;
+}
+.my-sm-0:hover {
+    color: #97C5D8 !important;
+    background-color: #1E9ACD !important;
+}
+.center {
+    margin-left: 10%; /*ou 25%*/
+    margin-top: 1%;
+}
+.btn {
+    border: #db8a28 !important;
+    border-radius: 5px !important;
+    cursor: pointer !important;
+}
+.bg-yellow-btn {
+    border-color: #db8a28 !important;
+}
+.cont {
+    margin-left: 0%;
+}
+.my-lg-0 {
+    margin-left: 25% !important;
+}
+.bg-yello {
+    color: #1E9ACD !important;
+    background-color: #E3E7E8 !important;
+}
+/*.bg-yello:hover {
+    color: #E3E7E8 !important;
+    background-color: #97C5D8 !important;
+}*/
+.bg-whit {
+    color: #E3E7E8 !important;
+    background-color: #97C5D8 !important;
+}
+.bg-whit:hover {
+    color: #97C5D8 !important;
+    background-color: #1E9ACD !important;
+}
+.row {
+    height: 100% !important;
+}
+/*-----------------------------------------------------------------*/
+/*css pag de login*/
+body{
+
+    /* background:rgba(0, 0, 0, 0.76); */
+    }
+    a{
+     text-decoration:none !important;
+     }
+     h1,h2,h3{
+     font-family: 'Kaushan Script', cursive;
+     }
+      .myform{
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 1rem;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    /* background-color: #fff; */
+    background-clip: padding-box;
+    /* border: 1px solid rgba(0,0,0,.2); */
+    border-radius: 1.1rem;
+    outline: 0;
+    max-width: 500px;
+     }
+     .tx-tfm{
+     text-transform:uppercase;
+     }
+     .mybtn{
+     border-radius:50px;
+     }
+    
+     .login-or {
+     position: relative;
+     /*color: #aaa;*/
+     margin-top: 10px;
+     margin-bottom: 10px;
+     padding-top: 10px;
+     padding-bottom: 10px;
+     }
+     .span-or {
+     display: block;
+     position: absolute;
+     left: 50%;
+     top: -2px;
+     margin-left: -25px;
+     /* background-color: #fff; */
+     width: 50px;
+     text-align: center;
+     }
+     .hr-or {
+     height: 1px;
+     margin-top: 0px !important;
+     margin-bottom: 0px !important;
+     }
+     .google {
+     /* color:#666; */
+     width:100%;
+     height:40px;
+     text-align:center;
+     outline:none;
+     border: 1px solid lightgrey;
+     }
+      form .error {
+     /* color: #ff0000; */
+     }
+     #second{display:none;}
+
+/*-----------------------------------------------------------------*/
+/*css do caio*/
+
+.ss{
+color: #000000;
+
+}
+.tt{
+    margin-top: 5%;
+}
+.jj{
+color: white;
+}
+
+
+.card{
+   /* margin-top: 5%;*/
+}
+
+
+
+/* cart */
+.quantity {
+    float: left;
+    margin-right: 15px;
+    background-color: #eee;
+    position: relative;
+    width: 80px;
+    overflow: hidden
+}
+
+.quantity input {
+    margin: 0;
+    text-align: center;
+    width: 15px;
+    height: 15px;
+    padding: 0;
+    float: right;
+    color: #000;
+    font-size: 20px;
+    border: 0;
+    outline: 0;
+    background-color: #F6F6F6
+}
+
+.quantity input.qty {
+    position: relative;
+    border: 0;
+    width: 100%;
+    height: 40px;
+    padding: 10px 25px 10px 10px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 15px;
+    border-radius: 0;
+    background-clip: padding-box
+}
+
+.quantity .minus, .quantity .plus {
+    line-height: 0;
+    background-clip: padding-box;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-background-size: 6px 30px;
+    -moz-background-size: 6px 30px;
+    color: #bbb;
+    font-size: 20px;
+    position: absolute;
+    height: 50%;
+    border: 0;
+    right: 0;
+    padding: 0;
+    width: 25px;
+    z-index: 3
+}
+
+.quantity .minus:hover, .quantity .plus:hover {
+    background-color: #dad8da
+}
+
+.quantity .minus {
+    bottom: 0
+}
+.shopping-cart {
+    margin-top: 20px;
+}
+
