@@ -1,6 +1,12 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-family: 'Jomolhari', serif;
+    background-image: url(../cima.jpg);
+    background-attachment: fixed;
+    background-size: auto;
+    background-repeat: no-repeat;
+    padding-top:4.2rem;
+    padding-bottom:4.2rem;
 }
 .bg-yellow {
     color: #000 !important;
@@ -56,8 +62,7 @@ body {
 /*-----------------------------------------------------------------*/
 /*css pag de login*/
 body{
-    padding-top:4.2rem;
-    padding-bottom:4.2rem;
+
     /* background:rgba(0, 0, 0, 0.76); */
     }
     a{
@@ -127,12 +132,7 @@ body{
 
 /*-----------------------------------------------------------------*/
 /*css do caio*/
-body{
-    background-image: url(../cima.jpg);
-    background-attachment: fixed;
-    background-size: auto;
-    background-repeat: no-repeat;
-}
+
 .ss{
 color: #000000;
 
@@ -148,9 +148,7 @@ color: white;
 .card{
    /* margin-top: 5%;*/
 }
-.ww{
-    
-}
+
 
 
 /* cart */
