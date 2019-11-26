@@ -27,13 +27,13 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link bg-yellow" href="<?php echo $url; ?>home">Inicio</a>
+                            <a class="nav-link bg-yellow" href="<?php echo $url; ?>/home">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link bg-yellow" href="<?php echo $url; ?>produto/cadastrar">Produtos</a>
+                            <a class="nav-link bg-yellow" href="<?php echo $url; ?>/produto/cadastrar">Produtos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link bg-yellow" href="<?php echo $url; ?>servicos/cadastrar">Serviços</a>
+                            <a class="nav-link bg-yellow" href="<?php echo $url; ?>/servicos/cadastrar">Serviços</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link bg-yellow" href="#">Contato</a>

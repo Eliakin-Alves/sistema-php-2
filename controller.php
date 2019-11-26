@@ -7,10 +7,10 @@
     //model=departamento & action-listar
     require "incluedes/autoload.php";
     
-    $router = $_GET['model'].$_GET['action'];
+    @$router = $_GET['model'].$_GET['action'];
     $view = "";
 
-    $url = "http://localhost/carro";
+    $url = "http://localhost/sistema-php-2";
 
     switch($router){
     //router = departamentolistar
@@ -74,11 +74,11 @@
             $view = "painel-cliente.php";
             break;
     
-        case 'painellogoff':
+        /*case 'painellogoff':
                 $obj = new \LOJA\API\ClienteLogoff;
                     
                 $view = "form-cliente-login.php";
-                break;
+                break;*/
 
             // PARTE DO CLIENTE ^^ 
         
@@ -159,13 +159,23 @@
             $view = "painel-adm.php";
             break;
 
-        case 'painellogoff':
+        case 'painellogoffadm':
                 $obj = new \LOJA\API\UsuarioLogoff;
                 
                 $view = "form-adm.php";
                 break;
             
             // PARTE DOS ADMIN ^^
+
+        case 'carrinho':
+            // $obj = new \LOJA\API\UsuarioLogoff;
+            $view = "cart.php";
+            break;
+
+        case 'painellogoff':
+            $obj = new \LOJA\API\UsuarioLogoff;
+            $view = "form-login-adm.php";
+            break;
 
        
         default:

@@ -22,7 +22,7 @@ use LOJA\Model\Usuario;
                         $_SESSION['usuarioid'] = $result['id'];
                         $_SESSION['usuarionome'] = $result['nome'];
 
-                        header("location: http://localhost/carro/painel/adm");
+                        header("location: http://localhost/sistema-php-2/painel/adm");
                     }else{
                         $this->msg = "Usuário/Senha inválidos";
                     }
