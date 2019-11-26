@@ -48,7 +48,7 @@
   <div class="card">
     <img src="img/poli.jpg" class="card-img-top bb" alt="...">
     <div class="card-body">
-      <h5 class="card-title">Polimento</h5>
+      <h5 class="card-title ss">Polimento</h5>
       <p class="card-text">Polimento é todo o procedimento realizado com o intuito de gerar ou reativar o brilho de quaisquer superfícies. Em geral, toda peça natural ou de manufatura, pode ser polida.</p>
       <p class="card-text"><small class="text-muted"></small></p>
     </div>
