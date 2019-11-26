@@ -25,7 +25,7 @@
         public function setLista($lista){
             $this->lista = $lista;
         }
-        public function addItems($id) {
+        public function addItem($id) {
             $dao = new DAOProduto();
             $obj = new Produto();
             $obj = $dao->buscarPorId($obj);
@@ -44,6 +44,15 @@
                     unset($this->lista[$index]);
                 };
             }
+        }
+        public function getItems() {
+            return $this->lista;
+        }
+        public function getLista() {
+            return $this->lista;
+        }
+        public function setLista($lista) {
+            $this->lista = $lista;
         }
     }
 ?>

@@ -17,7 +17,7 @@
 
             // PARTE DO SERVIÇO <>
         case 'servicocadastrar':
-            \LOJA\incluedes\Seguranca::restritoAdm();
+            //\LOJA\incluedes\Seguranca::restritoAdm();
 
             $obj = new \LOJA\API\ServicoCadastrar;
             $msg = $obj->msg;
@@ -84,7 +84,7 @@
         
           // PARTE DO PRODUTO <> 
         case 'produtocadastrar':
-            \LOJA\incluedes\Seguranca::restritoAdm();
+            //\LOJA\incluedes\Seguranca::restritoAdm();
             $obj = new \LOJA\API\ProdutoCadastrar;
             $msg = $obj->msg;
 
@@ -176,10 +176,24 @@
             $obj = new \LOJA\API\UsuarioLogoff;
             $view = "form-login-adm.php";
             break;
+        case 'carrinhoadicionar':
+            $obj = new \LOJA\API\CarrinhoVisualizar;
+            $lista = $obj->lista;
+            $view = "carrinho.php";
+        break;
 
+        case'carrinhoremover':
+            $obj = new \LOJA\API\CarrinhoRemover;
+            $lista = $obj->lista;
+            $view = "cart.php";
+        break;
+
+        case 'carrinho':
+            $view = "cart.php";
+        break;
        
         default:
-            $view = "form-cliente.php";
+            $view = "home.php";
         break; 
     }
 

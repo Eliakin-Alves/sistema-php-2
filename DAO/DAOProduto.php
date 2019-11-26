@@ -51,12 +51,15 @@ class DAOProduto{
             $con->bindValue(":id", $id);
             $con->execute();
     
+            $obj = $con->fetch(\PDO::FETCH_ASSOC);
+       
             $produto = new Produto();
-    
-            $produto = $con->fetch(\PDO::FETCH_ASSOC);
-            //print_r($cliente);//testa saida 
+            $produto->setId($obj['pk_produto']);
+            $produto->setNome($obj['nome']);
+            $produto->setPreco($obj['preco']);
+            $produto->setImagem($obj['imagem']);
+
             return $produto;
-    
         }
 
     
